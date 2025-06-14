@@ -1,1 +1,82 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Father's Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #d7e9f7, #f9f7e8);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #2b2d42;
+      color: #fff;
+      padding: 20px;
+      font-size: 2em;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 90%;
+      margin: auto;
+      position: relative;
+    }
+    .image-container {
+      position: relative;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      pointer-events: none; /* Disable touch on image */
+      user-select: none;    /* Disable selection */
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    footer {
+      background-color: #2b2d42;
+      color: #fff;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;" ondragstart="return false;">
+
+<header>Happy Father's Day!</header>
+
+<div class="container">
+  <div class="card">
+    <div class="image-container">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/SwFzX3wF/papa-mere-papa.jpg" alt="papa-mere-papa" border="0"></a>
+      <img src="https://ibb.co/pjYSvLjY" alt="Father's Day">
+      <div class="overlay"></div> <!-- Transparent overlay blocks long press -->
+    </div>
+    <h2>To the world you are a dad,<br>To our family you are the world. 💖</h2>
+    <p>Thank you for your endless love, guidance, and support. Today we celebrate you!</p>
+  </div>
+</div>
+
+<footer>Made with ❤️ for all amazing dads</footer>
+
+<script>
+  // Disable long press menu (for most mobile browsers)
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+</body>
+</html>
